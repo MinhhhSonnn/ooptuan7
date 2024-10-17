@@ -1,7 +1,7 @@
 public class Square extends Rectangle {
 
   public Square() {
-
+    super();
   }
 
   public Square(double side) {
@@ -30,12 +30,12 @@ public class Square extends Rectangle {
   @Override
   public void setLength(double side) {
     super.setLength(side);
-    super.setWidth(width);
+    super.setWidth(side);
   }
 
   @Override
   public String toString() {
-    return "Square[side=" + getSide() + ", color=" + getColor() + ", filled=" + isFilled() + "]";
+    return "Square[side=" + getSide() + ",color=" + getColor() + ",filled=" + isFilled() + "]";
   }
 
 
